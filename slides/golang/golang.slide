@@ -15,7 +15,7 @@ Hashtag: #ditae14
 
 - Go is a relatively new programming language designed at Google and maintained as an open source project
 - It's a great teaching language because it is small (like C) but powerful and expressive (like Python or Javascript)
-- It is much simpler than C++ or Java and already has a rich anctad stable standard library
+- It is much simpler than C++ or Java and already has a rich and stable standard library
 - Go is a general purpose programming language and is finding applications in everything from systems programming to web development middleware
 - We will use it as a way to refresh and review core programming skills and concepts and as part of our problem-solving toolkit in this class
 
@@ -56,9 +56,9 @@ Hashtag: #ditae14
 - In Go, you use slices where you might use arrays or lists in other languages.
 - An array is a fixed size data structure all having the same type
 
-  var results [10]float
+  var results [10]float32
   results[0] = 3.14
-  pi := results[0]              // The variable pi will also be of type float
+  pi := results[0]              // The variable pi will also be of type float32
 
 - Slices build on the array type, are easier to use and are more idiomatic in Go
 
