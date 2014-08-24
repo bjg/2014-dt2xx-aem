@@ -1,0 +1,60 @@
+Core Programming Skills
+
+Advanced Entry (DT211, DT228)
+
+Brian Gillespie, School of Computing, DIT
+Aug 2014
+
+brian.x.gillespie@dit.ie
+
+@__bjg
+Hashtag: #ditae14
+
+ 
+* Problem Set 1
+
+* Guidelines for exercises in this module
+
+- For these programming exercises, you are being asked to solve problems which require you to research concepts not necessarily already covered in class
+- It is recommended that you review the learning resources listed at the end of the introductory lecture on Go programming
+-  You are welcome to ask the instructor for help, but it is important that you try to find out the answers yourself before you do so. You may work with a class colleague if you wish
+- When you do ask for help, try to outline everything you have thought about and tried up to that point. Your instructor is there to guide you
+
+*Note:* These problems are just about small enough that you could use the [[http://play.golang.org/][Go Playground]] to code your solutions. If you prefer, you can install a copy of the Go Language on your laptop or lab desktop which is described in the [[https://playground.golang.org/doc/install][Go installation documentation]]
+
+* Excercise #1
+
+- Write a function to generate a list (returned as a Go slice) of integers with a uniform distribution in a random order between some specified minimum and maximum. Go comes with a function to generate random integers, within a range, as follows:
+
+  import "math/rand"
+
+  r := rand.Intn(100) // Generate a random number between 0 and 99
+
+- Write code to print your results
+
+*Hint:* To ensure the uniformity of your list, you should generate it sorted first and then shuffle it. You will need to think about how you might shuffle a sorted list
+
+* Excercise #2
+
+- Suppose a lecturer has collected the following results in an online MCQ exam
+
+  results := []float32{
+      70.21067, 95.23731, 48.56398, 45.80380, 84.57824, 57.56347, 63.98469, 76.35332, 76.61905,
+      78.08247, 58.86418, 52.45476, 41.10990, 74.44590, 60.94644, 69.56891, 82.40521, 94.88734,
+      78.25650, 73.42231, 64.45375, 83.20946, 73.53518, 58.06571, 28.38046, 52.63720, 80.55414,
+      79.74410, 95.17229, 61.29581,
+  }
+
+- Define a function to calculate the mean grade of this exam sitting
+- Define a second function to calculate the standard deviation, _s_, of this list given as:
+
+.image sdi.jpeg
+
+- Write code to print your results
+
+* Excercise #3
+
+- Continuing with the exam results from exercise #2, write a function to calculate the median exam grade. Recall that the median is the middle element of a *sorted* list.
+- You may assume that the medium is _(n/2)th_ indexed element. You should implement your own number sorter for this solution
+
+*Hint:* You could look at the [[http://en.wikipedia.org/wiki/Insertion_sort][Insertion Sort]] or [[http://en.wikipedia.org/wiki/Merge_sort][Merge Sort]] Wikipedia pages for ideas on how to sort your list
