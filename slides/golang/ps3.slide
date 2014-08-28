@@ -1,0 +1,45 @@
+Core Programming Skills
+
+Advanced Entry (DT211, DT228)
+
+Brian Gillespie, School of Computing, DIT
+Aug 2014
+
+brian.x.gillespie@dit.ie
+
+@__bjg
+Hashtag: #ditae14
+
+ 
+* Problem Set 3
+
+* Guidelines for exercises in this module
+
+- For these programming exercises, you are being asked to solve problems which require you to research concepts not necessarily already covered in class
+- It is recommended that you review the learning resources listed at the end of the introductory lecture on Go programming
+-  You are welcome to ask the instructor for help, but it is important that you try to find out the answers yourself before you do so. You may work with a class colleague if you wish
+- When you do ask for help, try to outline everything you have thought about and tried up to that point. Your instructor is there to guide you
+
+*Note:* You should attempt this problem set in the Nitrous.IO IDE in order that you can run your tests in Go
+
+* Linked List Primer
+
+- A linked-list is a dynamic data structure which supports addition in constant time and search and removal in linear time in the number of elements in the list
+- A list is made from zero or more linked nodes each having a value and a pointer to the next node in the chain
+- The list is achored by a head node whose next pointer points to the first element in the list
+- To add a new node (i.e. value) you set the new node's next pointer to point to the node formerly pointed to by the head's next point. Then make the head's next pointer point to the new node
+- To find a value, start at the head and follow the next pointers of each successive node until you find the value you are looking for or reach the end of the list
+- To remove a value, you first need to find it in the list. Finding a node means following successive next pointers as before but also requires a previous pointer to be continually updated which points to the node just before the one found. If found then make the previous node's next pointer point to the found node's next pointer. This has the effect of _unlinking_ the found node from the list
+
+* Excercise #1
+
+In this exercise you will develop the linked-list implementation using a TDD process. The starter code is available in the module Githib repositiory. Build out the following interfaces with unit test cases for each
+
+- Add an integer value
+- Search for a value
+- Delete a value
+- Get the list's current length
+
+*Hint:* Remember to develop at least one failing test case for each feature addition *before* you implement the feature
+
+*Bonus:* Use git source code control in your development process by checking in your changes after each test passes
