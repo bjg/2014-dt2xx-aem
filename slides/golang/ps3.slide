@@ -33,7 +33,7 @@ Hashtag: #ditae14
 
 * Excercise #1
 
-In this exercise you will develop the linked-list implementation using a TDD process. The starter code is available in the module Githib repositiory. Build out the following interfaces with unit test cases for each
+In this exercise you will develop the linked-list implementation using a TDD process. The starter code is available in the module Github repositiory. Build out the following interfaces with unit test cases for each
 
 - Add an integer value
 - Search for a value
