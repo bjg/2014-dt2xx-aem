@@ -1,0 +1,59 @@
+Database Fundamentals
+
+Advanced Entry (DT211, DT228)
+
+Brian Gillespie, School of Computing, DIT
+Aug 2014
+
+brian.x.gillespie@dit.ie
+
+@__bjg
+Hashtag: #ditae14
+
+ 
+* Problem Set 3.1
+
+* Guidelines for exercises in this module
+
+- For these programming exercises, you are being asked to solve problems which require you to research concepts not necessarily already covered in class
+- It is recommended that you review the learning resources listed at the end of the introductory lecture on Go programming
+-  You are welcome to ask the instructor for help, but it is important that you try to find out the answers yourself before you do so. You may work with a class colleague if you wish
+- When you do ask for help, try to outline everything you have thought about and tried up to that point. Your instructor is there to guide you
+
+*Note:* You should attempt this problem set in the Nitrous.IO IDE in order that you can use the already-installed version of sqlite3
+
+* Database Setup
+
+- Open an console window in Nitrous.IO and make a new folder in your workspace called `db` and change into it
+- Download the sample data set as follows:
+
+  $ curl -O http://goo.gl/BUZ70d
+
+- Look at the first line of the csv file for the names and types of the columns of your table
+
+  $ head -n1 crime.csv
+
+- Start up the database and create a crime table using a CREATE statement
+
+  $ sqlite3
+  sqlite3> CREATE TABLE crime (...);
+
+* Database Setup (cont'd)
+
+- Import the data
+  
+  sqlite3> .separator ","
+  sqlite3> .import crime.csv crime
+
+* Excercise #1
+
+Generate queries for the following questions
+
+- How many incidents were recorded in the table?
+- How many incidents occured (in any day) between midnight and 9am?
+- What is the most commonly reported crime type?
+- What district reported the most incidents?
+- Which beat reported the most incidents and the fewest incidents?
+- On which street do the most incidents occur?
+
+Generate queries for questions of your choice
