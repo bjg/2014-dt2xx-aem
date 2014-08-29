@@ -27,7 +27,7 @@ Hashtag: #ditae14
 - Open an console window in Nitrous.IO and make a new folder in your workspace called `db` and change into it
 - Download the sample data set as follows:
 
-  $ curl -O http://goo.gl/BUZ70d
+  $ curl -L http://goo.gl/BUZ70d > crime.csv
 
 - Look at the first line of the csv file for the names and types of the columns of your table
 
