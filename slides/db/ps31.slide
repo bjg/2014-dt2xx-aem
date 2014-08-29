@@ -16,9 +16,9 @@ Hashtag: #ditae14
 * Guidelines for exercises in this module
 
 - For these programming exercises, you are being asked to solve problems which require you to research concepts not necessarily already covered in class
-- It is recommended that you review the learning resources listed at the end of the introductory lecture on Go programming
 -  You are welcome to ask the instructor for help, but it is important that you try to find out the answers yourself before you do so. You may work with a class colleague if you wish
 - When you do ask for help, try to outline everything you have thought about and tried up to that point. Your instructor is there to guide you
+- Consult the [[http://www.sqlite.org/docs.html][SQLite3 Reference Documentation]] for additional information
 
 *Note:* You should attempt this problem set in the Nitrous.IO IDE in order that you can use the already-installed version of sqlite3
 
@@ -47,7 +47,7 @@ Hashtag: #ditae14
 
 * Excercise #1
 
-Using the [[http://www.sqlite.org/docs.html][Reference]] to figure out the correct syntax, generate queries for the following questions
+Using the [[http://www.sqlite.org/docs.html][SQLite3 Reference Documentation]] to figure out the correct syntax, generate queries for the following questions
 
 - How many incidents were recorded in the table?
 - How many incidents occured (in any day) between midnight and 9am?
