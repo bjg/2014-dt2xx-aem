@@ -40,7 +40,7 @@ Hashtag: #ditae14
 
 * Database Setup (cont'd)
 
-- Import the data
+- Import the data from the csv into your newly created table
   
   sqlite3> .separator ","
   sqlite3> .import crime.csv crime
