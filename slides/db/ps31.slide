@@ -33,9 +33,9 @@ Hashtag: #ditae14
 
   $ head -n1 crime.csv
 
-- Start up the database and create a crime table using a CREATE statement
+- Start up the database specifying a database name and create a crime table using a `CREATE` statement. You need to specifiy the database name each time you re-run sqlite3
 
-  $ sqlite3
+  $ sqlite3 crime.db
   sqlite3> CREATE TABLE crime (...);
 
 * Database Setup (cont'd)
@@ -47,7 +47,7 @@ Hashtag: #ditae14
 
 * Excercise #1
 
-Generate queries for the following questions
+Using the [[http://www.sqlite.org/docs.html][Reference]] to figure out the correct syntax, generate queries for the following questions
 
 - How many incidents were recorded in the table?
 - How many incidents occured (in any day) between midnight and 9am?
@@ -56,4 +56,4 @@ Generate queries for the following questions
 - Which beat reported the most incidents and the fewest incidents?
 - On which street do the most incidents occur?
 
-Generate queries for questions of your choice
+Generate queries for additioal questions of your choice to get familiar
